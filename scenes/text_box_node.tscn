@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://6le5pxx50yvm"]
+
+[ext_resource type="Script" path="res://Scripts/text_box_node.gd" id="1_atb4y"]
+[ext_resource type="PackedScene" uid="uid://dyat5lcpoqltw" path="res://scenes/button.tscn" id="2_54mrn"]
+[ext_resource type="Texture2D" uid="uid://bajggtmvvjj4s" path="res://assets/default.jpg" id="3_ppkq3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6urc6"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="TextBoxNode" type="CanvasLayer"]
+script = ExtResource("1_atb4y")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1072.0
+offset_bottom = 570.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6urc6")
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 118.0
+offset_right = 1051.0
+offset_bottom = 414.0
+theme_override_colors/word_highlighted_color = Color(1, 1, 1, 0.470588)
+theme_override_colors/current_line_color = Color(0, 0, 0, 1)
+theme_override_colors/background_color = Color(100, 100, 100, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.552941)
+theme_override_colors/font_readonly_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0.808998, 0.808998, 0.808998, 0.168627)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_border_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+placeholder_text = "	What do you want to talk about..."
+
+[node name="Node2D" parent="Panel" instance=ExtResource("2_54mrn")]
+position = Vector2(835, 457)
+
+[node name="Default" type="Sprite2D" parent="."]
+position = Vector2(70, 60)
+scale = Vector2(0.2025, 0.2025)
+texture = ExtResource("3_ppkq3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 135.0
+offset_top = 23.0
+offset_right = 260.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Name Nameson"
+
+[connection signal="text_changed" from="Panel/TextEdit" to="." method="_on_text_edit_text_changed"]
+[connection signal="button_pressed" from="Panel/Node2D" to="." method="_on_node_2d_button_pressed"]

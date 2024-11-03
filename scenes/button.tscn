@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyat5lcpoqltw"]
+
+[ext_resource type="Script" path="res://Scripts/button.gd" id="1_6syxs"]
+[ext_resource type="Texture2D" uid="uid://bl1p3mqa84xlp" path="res://assets/round_rectangle.png" id="1_0506w"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_is6vl"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6syxs")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 181.0
+offset_bottom = 93.0
+icon = SubResource("CompressedTexture2D_is6vl")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.804743, 0.804743, 0.804743, 1)
+offset_right = 178.0
+offset_bottom = 89.0
+mouse_filter = 2
+texture = ExtResource("1_0506w")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 32.225
+offset_top = 7.195
+offset_right = 211.225
+offset_bottom = 96.195
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "Post"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
