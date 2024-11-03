@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfc40a25blrbj"]
+[gd_scene load_steps=9 format=3 uid="uid://dfc40a25blrbj"]
 
 [ext_resource type="VideoStream" path="res://assets/videos/start_menu_loop.ogv" id="1_wgfse"]
+[ext_resource type="Script" path="res://Scripts/v_box_container.gd" id="2_audgk"]
 [ext_resource type="Texture2D" uid="uid://d4fev57iiif2o" path="res://assets/logo.png" id="2_xtj0o"]
 [ext_resource type="FontFile" uid="uid://wtjow48u2wi1" path="res://assets/fonts/font.otf" id="2_yque0"]
 [ext_resource type="AudioStream" uid="uid://dl152jvw2styp" path="res://audio/music/menu/menu_music.mp3" id="3_56hx5"]
@@ -72,6 +73,7 @@ offset_bottom = 259.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 30
+script = ExtResource("2_audgk")
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -121,3 +123,5 @@ script = ExtResource("4_4le28")
 stream = ExtResource("3_56hx5")
 autoplay = true
 parameters/looping = true
+
+[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer" method="_on_button_pressed"]

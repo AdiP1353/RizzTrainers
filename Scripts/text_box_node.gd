@@ -90,4 +90,6 @@ func calc_score(post):
 
 func _on_node_2d_button_pressed() -> void:
 	var post = $Panel/TextEdit.text
-	print(calc_score(post))
+	var score = calc_score(post) * 100
+	
+	$Panel/Label.text = "LinkedIn Post Score: " + str(score) + "%"

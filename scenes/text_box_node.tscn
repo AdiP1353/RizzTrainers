@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/text_box_node.gd" id="1_atb4y"]
 [ext_resource type="PackedScene" uid="uid://dyat5lcpoqltw" path="res://scenes/button.tscn" id="2_54mrn"]
-[ext_resource type="Texture2D" uid="uid://bajggtmvvjj4s" path="res://assets/default.jpg" id="3_ppkq3"]
+[ext_resource type="Texture2D" uid="uid://dx7oal8r26462" path="res://assets/default.jpg" id="3_ppkq3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6urc6"]
 bg_color = Color(1, 1, 1, 1)
@@ -39,6 +39,14 @@ placeholder_text = "	What do you want to talk about..."
 [node name="Node2D" parent="Panel" instance=ExtResource("2_54mrn")]
 position = Vector2(835, 457)
 
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 533.0
+offset_right = 52.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
 [node name="Default" type="Sprite2D" parent="."]
 position = Vector2(70, 60)
 scale = Vector2(0.2025, 0.2025)
@@ -51,6 +59,14 @@ offset_right = 260.0
 offset_bottom = 46.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Name Nameson"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 19.0
+offset_top = 582.0
+offset_right = 1058.0
+offset_bottom = 605.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "The purpose of this is to judge the \"linkedIn\"ness of a set of text. The higher the number, the more likely it is to be a post from linkedIn"
 
 [connection signal="text_changed" from="Panel/TextEdit" to="." method="_on_text_edit_text_changed"]
 [connection signal="button_pressed" from="Panel/Node2D" to="." method="_on_node_2d_button_pressed"]
