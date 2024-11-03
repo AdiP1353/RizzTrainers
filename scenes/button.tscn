@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dyat5lcpoqltw"]
 
 [ext_resource type="Script" path="res://Scripts/button.gd" id="1_6syxs"]
-[ext_resource type="Texture2D" uid="uid://bl1p3mqa84xlp" path="res://assets/round_rectangle.png" id="1_0506w"]
+[ext_resource type="Texture2D" uid="uid://by3h2x5adku2t" path="res://assets/round_rectangle.png" id="1_0506w"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_is6vl"]
 

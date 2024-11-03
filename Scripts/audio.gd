@@ -2,7 +2,7 @@ extends Node2D
 
 
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
-const AUDIO_FOLDER = "res://music/"
+const AUDIO_FOLDER = "res://audio/music/"
 
 func _ready() -> void:
 	randomize()  # Initialize random seed
