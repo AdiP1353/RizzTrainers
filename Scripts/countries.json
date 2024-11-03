@@ -1,0 +1,58 @@
+[
+	{ 
+		"country": "Canada",
+		"fact": "Canada has the longest coastline in the world."
+	},
+	{ 
+		"country": "USA",
+		"fact": "USA has the largest economy in the world."
+	},
+	{
+		"country": "Brazil",
+		"fact": "Brazil is home to the Amazon Rainforest, the largest tropical rainforest in the world."
+	},
+	{
+		"country": "India",
+		"fact": "India is the second most populous country in the world."
+	},
+	{
+		"country": "France",
+		"fact": "France is the most visited country in the world."
+	},
+	{
+		"country": "Spain",
+		"fact": "Spain has prestige in wine production, attracting wine lovers accross the globe."
+	},
+	{
+		"country": "Nigeria",
+		"fact": "Nigeria is the most populous country in Africa."
+	},
+	{
+        "country": "Kenya",
+        "fact": "Kenya is known for its rich wildlife and national parks."
+    },
+	{
+		"country": "Argentina",
+		"fact": "Argentina is known for its passion for soccer and is the birthplace of famous players like Lionel Messi."
+	},
+	{
+		"country": "China",
+		"fact": "China has the largest population in the world."
+	},
+	{
+		"country": "Japan",
+		"fact": "Japan has more than 6,800 islands."
+	},
+	{
+        "country": "South Korea",
+        "fact": "South Korea is known for its advanced technology and is home to brands like Samsung and Hyundai."
+    },
+	{
+        "country": "Saudi Arabia",
+        "fact": "Saudi Arabia is the world's largest exporter of oil."
+    },
+	{
+		"country": "Australia",
+		"fact": "Australia is the only country that is also a continent."
+	}
+]
