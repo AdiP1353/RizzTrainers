@@ -1,0 +1,40 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-specific files
+.export/
+.export-*                     # Export templates for specific platforms
+.import/                       # Imported assets, like converted images and audio
+
+# Godot's binary files for exporting
+*.exe
+*.apk
+*.pck
+*.dylib
+*.dll
+*.lib
+*.so
+*.gen.*
+*.ios/
+
+# Godot's temporary files and backups
+*.tmp
+*.tmp.*                       # Godot's temporary files during scene editing
+*.godot_imported               # Cache of imported assets
+*.imported                     # Imported assets cache
+*.cfg-osx-*                    # macOS-specific configuration caches
+
+# Godot Editor-related files
+.editor_settings-*             # Godot editor settings specific to user/computer
+.editor_settings               # Godot editor settings file
+
+# Godot's script metadata files
+*.mono                        # For C# Godot projects (Mono builds)
+.mono/                        # Mono directory (for C# Godot projects)
+
+# System-specific files
+.DS_Store                     # macOS thumbnail cache
+Thumbs.db                     # Windows thumbnail cache
+desktop.ini                   # Windows system file
+
